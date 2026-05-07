@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+html, body{
+    height: 100%;
+    width: 100%;
+}
+ 
+body{
+    background-color:#cfdfd4;
+    background-image: linear-gradient(to top, #cfdfd4 0%, #e2f0e6 100%);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+* {
+    font-family: "Elms Sans", sans-serif;
+}
+
+div#app-title {
+    font-size: 2rem;
+    font-weight: 500 ;
+    letter-spacing: 1px;
+    color: #5e5e5e;
+}
+ 
+div#bpm-container {
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    background: #30ec4f;
+    background-image: radial-gradient(circle 248px at center, #16e36b 0%, #30ec68 47%, #46f77b 100%);
+    border-radius: 100%;
+    border: 12px dashed #009620;
+}
+ 
+div#bpm-container>span:nth-child(1) {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #00791e;
+    letter-spacing: 5px;
+}
+ 
+div#bpm-container>span:nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #00791e;
+}
+ 
+div.beatsText {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+ 
+button.beatsBTN{
+    transition: transform .1s ease;
+}
+button.beatsBTN:active{
+    transform: scale(.9);
+}
+#playMetronome{
+    border: 6px dashed #00752d;
+    background: #66ff8c;
+    background-image: linear-gradient(120deg, #89fea2 0%, #66ffa1 100%);
+    color: #007519;
+}
+#stopMetronome{
+    display: none;
+    border: 6px dashed #b14536;
+    background: #fe9a8b;
+    background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+    color: #6e0d00;
+}
+button.controlBtns {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
