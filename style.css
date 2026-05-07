@@ -30,7 +30,7 @@ div#bpm-container {
     background: #30ec4f;
     background-image: radial-gradient(circle 248px at center, #16e36b 0%, #30ec68 47%, #46f77b 100%);
     border-radius: 100%;
-    border: 12px dashed #009620;
+    border: 12px solid #009643;
 }
  
 div#bpm-container>span:nth-child(1) {
@@ -44,7 +44,7 @@ div#bpm-container>span:nth-child(2) {
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 2px;
-    color: #00791e;
+    color: #007937;
 }
  
 div.beatsText {
@@ -58,15 +58,30 @@ button.beatsBTN{
 button.beatsBTN:active{
     transform: scale(.9);
 }
+
+.form-range::-moz-range-track {
+  height: 8px;
+  background: #e2f0e8;
+  border-radius: 10px;
+  border: 0px solid #cbe1d5;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.form-range::-moz-range-thumb {
+    height: 24px;
+    width: 24px;
+    background: #35dd67;
+}
+
 #playMetronome{
-    border: 6px dashed #00752d;
+    border: 6px solid #00752d;
     background: #66ff8c;
     background-image: linear-gradient(120deg, #89fea2 0%, #66ffa1 100%);
     color: #007519;
 }
 #stopMetronome{
     display: none;
-    border: 6px dashed #b14536;
+    border: 6px solid #b14536;
     background: #fe9a8b;
     background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
     color: #6e0d00;
